@@ -2,8 +2,8 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/navabar/Header' 
 import Footer from './components/navabar/Footer'
-import Home from './components/pages/Home'
-import ProductPage from './components/pages/ProductPage'
+import Home from './pages/Home'
+import ProductPage from './pages/ProductPage'
 
 function App() {
   return (
