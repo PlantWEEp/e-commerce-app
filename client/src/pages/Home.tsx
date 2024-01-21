@@ -20,6 +20,11 @@ export default function Home() {
 
   return (
     <div className='w-[90%] m-auto'>
+      <div className='mb-6'>
+        <h1 className='text-4xl font-bold mb-2'>Welcome to Our Store!</h1>
+        <p className='text-gray-600'>Discover amazing products at great prices.</p>
+      </div>
+
       <div className='flex gap-3 m-x-[20px] '>
         {homeproducts.map((homeproduct) => (
           <div key={homeproduct.id} className='w-[270px] rounded overflow-hidden shadow-lg'>
@@ -34,10 +39,21 @@ export default function Home() {
           </div>
         ))}
       </div>
+
       <div className='flex justify-center mt-[20px]'>
-      <div className='px-[46px] py-[16px] bg-[#DB4444]  '>
-        <Link to="/all-products">View All Products</Link>
+        <div className='px-[46px] py-[16px] bg-[#DB4444] '>
+          <Link to="/all-products">View All Products</Link>
         </div>
+      </div>
+
+      <div className='mt-4 text mt-[40px]'>
+        <h2 className='text-4xl font-bold mb-2 '>Featured Collections</h2>
+        <p className='text-gray-600 mt-[35px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a consectetur est culpa qui sed natus optio, labore delectus pariatur sequi perferendis accusantium velit. Placeat earum porro tempore obcaecati suscipit?</p>
+      </div>
+
+      <div className='flex justify-center mt-4 mt-[60px] space-x-20'>
+        <img src='/src/assets/collectionimage1.jpg' className='w-[300px] h-[300px] object-cover mr-4 ' alt='First Image' />
+        <img src='/src/assets/collectionimage2.jpg' className='w-[300px] h-[200px] object-cover ml-4 mt-[50px]  hover:border-black border-2' alt='Second Image' />
       </div>
     </div>
   );
